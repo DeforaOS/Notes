@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=DeforaOS Notes
+GenericName=Notes
+Comment=Keep a list of notes
+TryExec=notes
+Exec=notes
+#Icon=
+Type=Application
+Categories=Office;GTK;
+StartupNotify=true

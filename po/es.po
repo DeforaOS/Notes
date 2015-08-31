@@ -1,0 +1,122 @@
+# $Id$
+# Copyright (c) 2015 Pierre Pronchery <khorben@defora.org>
+# This file is distributed under the same license as the Notes package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Notes 0.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-31 03:17+0200\n"
+"PO-Revision-Date: 2015-04-21 00:54+0200\n"
+"Last-Translator: Ana Carolina Rocha <carolina@defora.org>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/main.c:90
+#, c-format
+msgid "Usage: %s\n"
+msgstr "Usage: %s\n"
+
+#: ../src/noteedit.c:76
+msgid "Edit note: "
+msgstr "Editar nota: "
+
+#: ../src/noteedit.c:86
+msgid "Title:"
+msgstr "Título:"
+
+#: ../src/noteedit.c:95
+msgid "Description:"
+msgstr "Descripción:"
+
+#: ../src/notes.c:113
+msgid "Title"
+msgstr "Título"
+
+#: ../src/notes.c:128 ../src/notes.c:363
+msgid "New note"
+msgstr "Nueva nota"
+
+#: ../src/notes.c:129
+msgid "Edit note"
+msgstr "Editar nota"
+
+#: ../src/notes.c:133 ../src/notes.c:136
+msgid "Select all"
+msgstr "Seleccionar todo"
+
+#: ../src/notes.c:139
+msgid "Delete note"
+msgstr "Eliminar nota"
+
+#: ../src/notes.c:143
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: ../src/notes.c:281
+msgid "Notes for the DeforaOS desktop"
+msgstr "Administrador de notas para el escritorio de DeforaOS"
+
+#: ../src/notes.c:287
+msgid "translator-credits"
+msgstr "Ana Carolina Rocha <carolina@defora.org>"
+
+#: ../src/notes.c:317 ../src/notes.c:322
+msgid "Error"
+msgstr "Error"
+
+#: ../src/notes.c:392
+msgid "Are you sure you want to delete the selected note(s)?"
+msgstr "Está seguro que desea eliminar la(s) nota(s) seleccionada(s)?"
+
+#: ../src/notes.c:597 ../src/notes.c:602
+msgid "Question"
+msgstr "Pregunta"
+
+#: ../src/window.c:102
+msgid "_New"
+msgstr "_Nuevo"
+
+#: ../src/window.c:104 ../src/window.c:143
+msgid "_Edit"
+msgstr "_Editar"
+
+#: ../src/window.c:107
+msgid "_Close"
+msgstr "_Cerrar"
+
+#: ../src/window.c:113
+msgid "Select _All"
+msgstr "Seleccionar _todo"
+
+#: ../src/window.c:121
+msgid "_Delete"
+msgstr "_Eliminar tarea"
+
+#: ../src/window.c:124
+msgid "_Preferences"
+msgstr "_Preferencias"
+
+#: ../src/window.c:130
+msgid "_Contents"
+msgstr "_Contenidos"
+
+#: ../src/window.c:132
+msgid "_About"
+msgstr "Acerca _de"
+
+#: ../src/window.c:142
+msgid "_File"
+msgstr "_Archivo"
+
+#: ../src/window.c:144
+msgid "_Help"
+msgstr "_Ayuda"
+
+#: ../src/window.c:179
+msgid "Notes"
+msgstr "Notas"

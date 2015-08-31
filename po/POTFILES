@@ -1,0 +1,4 @@
+../src/main.c
+../src/noteedit.c
+../src/notes.c
+../src/window.c
