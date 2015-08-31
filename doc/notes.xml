@@ -51,15 +51,15 @@
 			<command>&name;</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
-	<refsect1 id="description">
+	<refsect1 id="notes_description">
 		<title>Description</title>
 		<para><command>&name;</command> manages notes.</para>
 	</refsect1>
-	<refsect1 id="options">
+	<refsect1 id="notes_options">
 		<title>Options</title>
 		<para>No option is available on the command line.</para>
 	</refsect1>
-	<refsect1 id="bugs">
+	<refsect1 id="notes_bugs">
 		<title>Bugs</title>
 		<para>Issues can be listed and reported at <ulink
 				url="http://www.defora.org/os/project/bug_list/4371/Notes"/>.</para>
