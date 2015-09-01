@@ -232,7 +232,6 @@ static void _new_view(Notes * notes)
 	}
 	gtk_tree_view_column_set_sort_column_id(column, ND_COL_TITLE);
 	gtk_container_add(GTK_CONTAINER(notes->scrolled), notes->view);
-	gtk_tree_view_append_column(GTK_TREE_VIEW(notes->view), column);
 }
 
 static gboolean _new_idle(gpointer data)
