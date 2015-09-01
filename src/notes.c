@@ -197,6 +197,7 @@ static void _new_view(Notes * notes)
 	notes->filter_sort = gtk_tree_model_sort_new_with_model(notes->filter);
 	notes->view = gtk_tree_view_new_with_model(GTK_TREE_MODEL(
 				notes->filter_sort));
+	gtk_tree_view_set_headers_visible(GTK_TREE_VIEW(notes->view), FALSE);
 	gtk_tree_view_set_rules_hint(GTK_TREE_VIEW(notes->view), TRUE);
 	if((sel = gtk_tree_view_get_selection(GTK_TREE_VIEW(notes->view)))
 			!= NULL)
