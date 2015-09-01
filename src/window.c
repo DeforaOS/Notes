@@ -79,6 +79,7 @@ static void _noteswindow_on_edit_preferences(gpointer data);
 
 /* help menu */
 static void _noteswindow_on_help_about(gpointer data);
+static void _noteswindow_on_help_contents(gpointer data);
 #endif
 
 /* constants */
@@ -126,6 +127,8 @@ static const DesktopMenu _edit_menu[] =
 };
 static const DesktopMenu _help_menu[] =
 {
+	{ N_("_Contents"), G_CALLBACK(_noteswindow_on_help_contents),
+		"help-contents", 0, GDK_KEY_F1 },
 	{ N_("_About"), G_CALLBACK(_noteswindow_on_help_about),
 #if GTK_CHECK_VERSION(2, 6, 0)
 		GTK_STOCK_ABOUT, 0, 0 },
@@ -317,5 +320,12 @@ static void _noteswindow_on_help_about(gpointer data)
 	NotesWindow * notes = data;
 
 	notes_about(notes->notes);
+}
+
+
+/* noteswindow_on_help_contents */
+static void _noteswindow_on_help_contents(gpointer data)
+{
+	desktop_help_contents(PACKAGE, PROGNAME);
 }
 #endif
