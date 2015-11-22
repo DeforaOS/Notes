@@ -326,6 +326,8 @@ static void _noteswindow_on_help_about(gpointer data)
 /* noteswindow_on_help_contents */
 static void _noteswindow_on_help_contents(gpointer data)
 {
+	(void) data;
+
 	desktop_help_contents(PACKAGE, PROGNAME);
 }
 #endif
