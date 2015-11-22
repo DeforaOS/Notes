@@ -95,7 +95,7 @@ static MailerPlugin * _notes_init(MailerPluginHelper * helper)
 		return NULL;
 	}
 	notes->helper = helper;
-	notes->widget = gtk_vbox_new(FALSE, 4);
+	notes->widget = gtk_box_new(GTK_ORIENTATION_VERTICAL, 4);
 	widget = notes_get_widget(notes->notes);
 	gtk_box_pack_start(GTK_BOX(notes->widget), widget, TRUE, TRUE, 0);
 	gtk_tree_view_set_headers_visible(GTK_TREE_VIEW(notes->notes->view),

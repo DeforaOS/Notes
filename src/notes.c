@@ -164,7 +164,7 @@ Notes * notes_new(GtkWidget * window, GtkAccelGroup * group)
 		return NULL;
 	/* main window */
 	notes->window = window;
-	vbox = gtk_vbox_new(FALSE, 0);
+	vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 	notes->widget = vbox;
 	/* toolbar */
 	widget = desktop_toolbar_create(_toolbar, notes, group);

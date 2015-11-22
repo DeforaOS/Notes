@@ -179,7 +179,7 @@ NotesWindow * noteswindow_new(void)
 	gtk_window_set_title(GTK_WINDOW(notes->window), _("Notes"));
 	g_signal_connect_swapped(notes->window, "delete-event", G_CALLBACK(
 				_noteswindow_on_closex), notes);
-	vbox = gtk_vbox_new(FALSE, 0);
+	vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 0);
 #ifndef EMBEDDED
 	/* menubar */
 	widget = desktop_menubar_create(_menubar, notes, group);
