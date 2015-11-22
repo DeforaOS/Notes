@@ -354,7 +354,7 @@ Note * notes_note_add(Notes * notes, Note * note)
 			return NULL;
 		if((filename = _notes_note_get_new_filename()) == NULL)
 		{
-			notes_error(notes, error_get(), 0);
+			notes_error(notes, error_get(NULL), 0);
 			note_delete(note);
 			return NULL;
 		}
@@ -489,13 +489,13 @@ int notes_note_reload_all(Notes * notes)
 	Note * note;
 
 	if((filename = _notes_note_get_directory()) == NULL)
-		return notes_error(notes, error_get(), 1);
+		return notes_error(notes, error_get(NULL), 1);
 	if((dir = opendir(filename)) == NULL)
 	{
 		if(errno != ENOENT)
 		{
 			error_set("%s: %s", filename, strerror(errno));
-			ret = notes_error(notes, error_get(), 1);
+			ret = notes_error(notes, error_get(NULL), 1);
 		}
 	}
 	else
@@ -511,7 +511,7 @@ int notes_note_reload_all(Notes * notes)
 				continue; /* XXX report error */
 			if((note = note_new_from_file(filename)) == NULL)
 			{
-				notes_error(NULL, error_get(), 1);
+				notes_error(NULL, error_get(NULL), 1);
 				continue;
 			}
 			if(notes_note_add(notes, note) == NULL)
