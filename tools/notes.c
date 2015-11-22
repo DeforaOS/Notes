@@ -37,7 +37,7 @@
 #include "../src/notes.c"
 
 
-/* Mailing-lists */
+/* Notes */
 /* private */
 /* types */
 typedef struct _MailerPlugin NotesPlugin;
