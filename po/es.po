@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Notes 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-31 03:17+0200\n"
+"POT-Creation-Date: 2016-02-20 16:46+0100\n"
 "PO-Revision-Date: 2015-04-21 00:54+0200\n"
 "Last-Translator: Ana Carolina Rocha <carolina@defora.org>\n"
 "Language-Team: Spanish\n"
@@ -29,7 +29,7 @@ msgstr "Editar nota: "
 msgid "Title:"
 msgstr "Título:"
 
-#: ../src/noteedit.c:95
+#: ../src/noteedit.c:99
 msgid "Description:"
 msgstr "Descripción:"
 
