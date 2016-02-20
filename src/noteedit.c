@@ -30,7 +30,7 @@
 
 #include <stdlib.h>
 #include <libintl.h>
-#include <gtk/gtk.h>
+#include <Desktop.h>
 #include "noteedit.h"
 #define _(string) gettext(string)
 
