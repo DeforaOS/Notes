@@ -39,8 +39,8 @@
 #define _(string) gettext(string)
 
 /* constants */
-#ifndef PROGNAME
-# define PROGNAME	"notes"
+#ifndef PROGNAME_NOTES
+# define PROGNAME_NOTES	"notes"
 #endif
 #ifndef PREFIX
 # define PREFIX		"/usr/local"
@@ -68,7 +68,7 @@ static int _notes(void)
 	NotesWindow * notes;
 
 	if((notes = noteswindow_new()) == NULL)
-		return error_print(PACKAGE);
+		return error_print(PROGNAME_NOTES);
 	gtk_main();
 	noteswindow_delete(notes);
 	return 0;
@@ -78,7 +78,7 @@ static int _notes(void)
 /* error */
 static int _error(char const * message, int ret)
 {
-	fputs(PROGNAME ": ", stderr);
+	fputs(PROGNAME_NOTES ": ", stderr);
 	perror(message);
 	return ret;
 }
@@ -87,7 +87,7 @@ static int _error(char const * message, int ret)
 /* usage */
 static int _usage(void)
 {
-	fprintf(stderr, _("Usage: %s\n"), PROGNAME);
+	fprintf(stderr, _("Usage: %s\n"), PROGNAME_NOTES);
 	return 1;
 }
 

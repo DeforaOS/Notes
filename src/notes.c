@@ -49,6 +49,10 @@ static char const _license[] = "All rights reserved.\n"
 #define _(string) gettext(string)
 #define N_(string) (string)
 
+#ifndef PROGNAME_NOTES
+# define PROGNAME_NOTES	"notes"
+#endif
+
 
 /* Notes */
 /* private */
@@ -327,7 +331,7 @@ int notes_error(Notes * notes, char const * message, int ret)
 
 static int _error_text(char const * message, int ret)
 {
-	fputs(PACKAGE ": ", stderr);
+	fputs(PROGNAME_NOTES ": ", stderr);
 	fputs(message, stderr);
 	fputc('\n', stderr);
 	return ret;
