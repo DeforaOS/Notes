@@ -62,7 +62,7 @@
 	<refsect1 id="notes_bugs">
 		<title>Bugs</title>
 		<para>Issues can be listed and reported at <ulink
-				url="http://www.defora.org/os/project/bug_list/4371/Notes"/>.</para>
+				url="https://www.defora.org/os/project/bug_list/4371/Notes"/>.</para>
 	</refsect1>
 </refentry>
 <!-- vim: set noet ts=1 sw=1 sts=1 tw=80: -->

@@ -291,7 +291,8 @@ void notes_about(Notes * notes)
 	desktop_about_dialog_set_translator_credits(notes->about,
 			_("translator-credits"));
 	desktop_about_dialog_set_version(notes->about, VERSION);
-	desktop_about_dialog_set_website(notes->about, "http://www.defora.org/");
+	desktop_about_dialog_set_website(notes->about,
+			"https://www.defora.org/");
 	g_signal_connect_swapped(notes->about, "delete-event", G_CALLBACK(
 				_about_on_closex), notes);
 	gtk_widget_show(notes->about);
