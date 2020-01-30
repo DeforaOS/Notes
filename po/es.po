@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Notes 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-20 16:46+0100\n"
+"POT-Creation-Date: 2020-01-30 23:05+0100\n"
 "PO-Revision-Date: 2015-04-21 00:54+0200\n"
 "Last-Translator: Ana Carolina Rocha <carolina@defora.org>\n"
 "Language-Team: Spanish\n"
@@ -33,47 +33,47 @@ msgstr "Título:"
 msgid "Description:"
 msgstr "Descripción:"
 
-#: ../src/notes.c:113
+#: ../src/notes.c:117
 msgid "Title"
 msgstr "Título"
 
-#: ../src/notes.c:128 ../src/notes.c:363
+#: ../src/notes.c:132 ../src/notes.c:369
 msgid "New note"
 msgstr "Nueva nota"
 
-#: ../src/notes.c:129
+#: ../src/notes.c:134
 msgid "Edit note"
 msgstr "Editar nota"
 
-#: ../src/notes.c:133 ../src/notes.c:136
+#: ../src/notes.c:138 ../src/notes.c:141
 msgid "Select all"
 msgstr "Seleccionar todo"
 
-#: ../src/notes.c:139
+#: ../src/notes.c:144
 msgid "Delete note"
 msgstr "Eliminar nota"
 
-#: ../src/notes.c:143
+#: ../src/notes.c:148
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: ../src/notes.c:281
+#: ../src/notes.c:286
 msgid "Notes for the DeforaOS desktop"
 msgstr "Administrador de notas para el escritorio de DeforaOS"
 
-#: ../src/notes.c:287
+#: ../src/notes.c:292
 msgid "translator-credits"
 msgstr "Ana Carolina Rocha <carolina@defora.org>"
 
-#: ../src/notes.c:317 ../src/notes.c:322
+#: ../src/notes.c:323 ../src/notes.c:328
 msgid "Error"
 msgstr "Error"
 
-#: ../src/notes.c:392
+#: ../src/notes.c:398
 msgid "Are you sure you want to delete the selected note(s)?"
 msgstr "Está seguro que desea eliminar la(s) nota(s) seleccionada(s)?"
 
-#: ../src/notes.c:597 ../src/notes.c:602
+#: ../src/notes.c:603 ../src/notes.c:608
 msgid "Question"
 msgstr "Pregunta"
 
