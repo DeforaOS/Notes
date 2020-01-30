@@ -782,6 +782,7 @@ static void _notes_on_note_title_edited(GtkCellRendererText * renderer,
 {
 	Notes * notes = data;
 	GtkTreePath * treepath;
+	(void) renderer;
 
 	treepath = gtk_tree_path_new_from_string(path);
 	notes_note_set_title(notes, treepath, title);
