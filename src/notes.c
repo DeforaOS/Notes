@@ -129,7 +129,8 @@ static char const * _authors[] =
 /* toolbar */
 static DesktopToolbar _toolbar[] =
 {
-	{ N_("New note"), G_CALLBACK(_notes_on_new), GTK_STOCK_NEW, 0, 0, NULL },
+	{ N_("New note"), G_CALLBACK(_notes_on_new), GTK_STOCK_NEW, 0, 0,
+		NULL },
 	{ N_("Edit note"), G_CALLBACK(_notes_on_edit), GTK_STOCK_EDIT, 0, 0,
 		NULL },
 	{ "", NULL, NULL, 0, 0, NULL },
