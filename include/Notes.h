@@ -28,28 +28,39 @@
 
 
 
-#ifndef NOTES_NOTES_H
-# define NOTES_NOTES_H
+#ifndef DESKTOP_NOTES_H
+# define DESKTOP_NOTES_H
 
-# include "../include/Notes.h"
-# include "note.h"
+# include <gtk/gtk.h>
 
 
 /* Notes */
+/* types */
+typedef struct _Notes Notes;
+
+typedef enum _NotesColumn
+{
+	ND_COL_NOTE = 0,
+	ND_COL_TITLE,
+	ND_COL_CATEGORY
+} NotesColumn;
+# define ND_COL_LAST ND_COL_CATEGORY
+# define ND_COL_COUNT (ND_COL_LAST + 1)
+
+
 /* functions */
-/* note */
-Note * notes_note_add(Notes * notes, Note * note);
-void notes_note_delete_selected(Notes * notes);
-void notes_note_remove_all(Notes * notes);
+Notes * notes_new(GtkWidget * window, GtkAccelGroup * group);
+void notes_delete(Notes * notes);
 
 /* accessors */
-void notes_note_set_title(Notes * notes, GtkTreePath * path,
-		char const * title);
+GtkWidget * notes_get_view(Notes * notes);
+GtkTreeViewColumn * notes_get_view_column(Notes * notes, unsigned int i);
+GtkWidget * notes_get_widget(Notes * notes);
 
-void notes_note_cursor_changed(Notes * notes);
-void notes_note_edit(Notes * notes);
-int notes_note_reload_all(Notes * notes);
-void notes_note_save_all(Notes * notes);
-void notes_note_select_all(Notes * notes);
+/* useful */
+void notes_about(Notes * notes);
+int notes_error(Notes * notes, char const * message, int ret);
 
-#endif /* !NOTES_NOTES_H */
+void notes_show_preferences(Notes * notes, gboolean show);
+
+#endif /* !DESKTOP_NOTES_H */

@@ -1,6 +1,6 @@
 /* $Id$ */
 static char _copyright[] =
-"Copyright © 2015-2020 Pierre Pronchery <khorben@defora.org>";
+"Copyright © 2015-2024 Pierre Pronchery <khorben@defora.org>";
 /* This file is part of DeforaOS Desktop Notes */
 static char const _license[] = "All rights reserved.\n"
 "\n"
@@ -57,13 +57,6 @@ static char const _license[] = "All rights reserved.\n"
 /* Notes */
 /* private */
 /* types */
-typedef enum _NotesColumn
-{
-	ND_COL_NOTE, ND_COL_TITLE, ND_COL_CATEGORY
-} NotesColumn;
-#define ND_COL_LAST ND_COL_CATEGORY
-#define ND_COL_COUNT (ND_COL_LAST + 1)
-
 struct _Notes
 {
 	GtkWidget * window;
@@ -260,6 +253,22 @@ void notes_delete(Notes * notes)
 
 
 /* accessors */
+/* notes_get_view */
+GtkWidget * notes_get_view(Notes * notes)
+{
+	return notes->view;
+}
+
+
+/* notes_get_view_column */
+GtkTreeViewColumn * notes_get_view_column(Notes * notes, unsigned int i)
+{
+	if(i >= 0 && i <= ND_COL_LAST)
+		return notes->columns[i];
+	return NULL;
+}
+
+
 /* notes_get_widget */
 GtkWidget * notes_get_widget(Notes * notes)
 {
