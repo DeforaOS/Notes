@@ -28,15 +28,9 @@
 
 
 
-#ifndef EMBEDDED
-# define EMBEDDED
-#endif
 #include <stdlib.h>
 #include <Desktop/Mailer/plugin.h>
-
-#include "../src/note.c"
-#include "../src/noteedit.c"
-#include "../src/notes.c"
+#include "Notes.h"
 
 
 /* Notes */
@@ -87,6 +81,7 @@ static MailerPlugin * _notes_init(MailerPluginHelper * helper)
 {
 	NotesPlugin * notes;
 	GtkWidget * widget;
+	GtkTreeViewColumn * column;
 	size_t i;
 
 	if((notes = malloc(sizeof(*notes))) == NULL)
@@ -100,12 +95,13 @@ static MailerPlugin * _notes_init(MailerPluginHelper * helper)
 	notes->widget = gtk_box_new(GTK_ORIENTATION_VERTICAL, 4);
 	widget = notes_get_widget(notes->notes);
 	gtk_box_pack_start(GTK_BOX(notes->widget), widget, TRUE, TRUE, 0);
-	gtk_tree_view_set_headers_visible(GTK_TREE_VIEW(notes->notes->view),
-			FALSE);
+	widget = notes_get_view(notes->notes);
+	gtk_tree_view_set_headers_visible(GTK_TREE_VIEW(widget), FALSE);
 	for(i = 0; i < ND_COL_COUNT; i++)
-		if(notes->notes->columns[i] != NULL && i != ND_COL_TITLE)
-			gtk_tree_view_column_set_visible(notes->notes->columns[i],
-					FALSE);
+		if((column = notes_get_view_column(notes->notes, i)) == NULL)
+			continue;
+		else if(i != ND_COL_TITLE)
+			gtk_tree_view_column_set_visible(column, FALSE);
 	gtk_widget_show_all(notes->widget);
 	return notes;
 }

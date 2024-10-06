@@ -1,0 +1,11 @@
+prefix=@PREFIX@
+includedir=${prefix}/include
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: Notes
+Description: DeforaOS Desktop Notes library
+Version: @VERSION@
+Requires: libDesktop
+Cflags: -I${includedir}
+Libs: -L${libdir} @RPATH@ -lNotes
