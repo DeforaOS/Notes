@@ -263,7 +263,7 @@ GtkWidget * notes_get_view(Notes * notes)
 /* notes_get_view_column */
 GtkTreeViewColumn * notes_get_view_column(Notes * notes, unsigned int i)
 {
-	if(i >= 0 && i <= ND_COL_LAST)
+	if(i <= ND_COL_LAST)
 		return notes->columns[i];
 	return NULL;
 }
