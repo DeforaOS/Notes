@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Notes 0.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-30 23:05+0100\n"
+"POT-Creation-Date: 2024-10-10 02:12+0200\n"
 "PO-Revision-Date: 2010-04-23 14:35+0200\n"
 "Last-Translator: Pierre Pronchery <khorben@defora.org>\n"
 "Language-Team: French\n"
@@ -33,47 +33,47 @@ msgstr "Titre:"
 msgid "Description:"
 msgstr "Description:"
 
-#: ../src/notes.c:117
+#: ../src/notes.c:110
 msgid "Title"
 msgstr "Titre"
 
-#: ../src/notes.c:132 ../src/notes.c:369
+#: ../src/notes.c:125 ../src/notes.c:378
 msgid "New note"
 msgstr "Nouvelle note"
 
-#: ../src/notes.c:134
+#: ../src/notes.c:127
 msgid "Edit note"
 msgstr "Modifier la note"
 
-#: ../src/notes.c:138 ../src/notes.c:141
+#: ../src/notes.c:131 ../src/notes.c:134
 msgid "Select all"
 msgstr "Sélectionner tout"
 
-#: ../src/notes.c:144
+#: ../src/notes.c:137
 msgid "Delete note"
 msgstr "Supprimer la note"
 
-#: ../src/notes.c:148
+#: ../src/notes.c:141
 msgid "Preferences"
 msgstr "Préférences"
 
-#: ../src/notes.c:286
+#: ../src/notes.c:295
 msgid "Notes for the DeforaOS desktop"
 msgstr "Gestionnaire de notes pour l'environnement DeforaOS"
 
-#: ../src/notes.c:292
+#: ../src/notes.c:301
 msgid "translator-credits"
 msgstr "Pierre Pronchery <khorben@defora.org>"
 
-#: ../src/notes.c:323 ../src/notes.c:328
+#: ../src/notes.c:332 ../src/notes.c:337
 msgid "Error"
 msgstr "Erreur"
 
-#: ../src/notes.c:398
+#: ../src/notes.c:407
 msgid "Are you sure you want to delete the selected note(s)?"
 msgstr "Voulez-vous vraiment supprimer la sélection?"
 
-#: ../src/notes.c:603 ../src/notes.c:608
+#: ../src/notes.c:612 ../src/notes.c:617
 msgid "Question"
 msgstr "Question"
 
